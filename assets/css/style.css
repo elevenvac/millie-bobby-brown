@@ -1,0 +1,180 @@
+@import"https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter";
+    background-color: white;
+    transition: all 0.3s linear
+}
+
+html {
+    background-color: white;
+    scroll-behavior: smooth
+}
+
+img {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+a {
+    color: unset
+}
+
+a:hover {
+    text-decoration: none;
+    color: unset
+}
+
+.decoration {
+    color: #1a8dd7
+}
+
+.decoration-nocolor {
+    color: unset
+}
+
+.decoration:hover {
+    text-decoration: underline;
+    color: #1a8dd7
+}
+
+.decoration-nocolor:hover {
+    text-decoration: underline;
+    color: unset
+}
+
+@media only screen and (min-width: 768px) {
+    .section {
+        padding-top: 8%
+    }
+    .aboutme {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .aboutme-item {
+        padding: 50px
+    }
+    .non-grid-padding {
+        padding: 50px
+    }
+    .aboutme-item-right {
+        float: right;
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section {
+        padding-top: 8em;
+    }
+    .aboutme-item-right {
+        display: none;
+    }
+}
+
+.head {
+    min-height: 100vh;
+    min-width: auto;
+    background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2019%2F09%2Fgettyimages-1158962093-2000.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover
+}
+
+.head-text {
+    text-align: center;
+    color: black;
+    padding-top: 85vh;
+    font-size: 20px;
+}
+
+#head-text {
+    cursor: pointer;
+}
+
+.aboutme {
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.aboutme-text-title {
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.aboutme-text-description {
+    color: black;
+    font-size: 20px
+}
+
+.aboutme-text-social-btn {
+    font-size: 30px
+}
+
+.aboutme-text-social-btn:hover {
+    opacity: 50%;
+}
+
+.moviesandtvshows {
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.moviesandtvshows-text-title {
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.moviesandtvshows-card {
+    background-color: #f9f9fa;
+    color: black;
+    min-height: auto; /*163px*/
+    max-height: auto /*163px*/
+}
+
+.card-gradient-red {
+    background-image: linear-gradient(to right, rgba(249, 249, 250, 0.1), rgba(255, 0, 0, 0.1))
+}
+
+.card-gradient-green {
+    background-image: linear-gradient(to right, rgba(249, 249, 250, 0.1), rgba(134, 198, 128, 0.1))
+}
+
+.card-gradient-brown {
+    background-image: linear-gradient(to right, rgba(249, 249, 250, 0.1), rgba(97, 33, 16, 0.1))
+}
+
+.card-gradient-blue {
+    background-image: linear-gradient(to right, rgba(249, 249, 250, 0.1), rgba(52, 189, 225, 0.1))
+}
+
+.moviesandtvshows-card:hover {
+    background-color: #f1f1f3;
+}
+
+.moviesandtvshows-card-title {
+    font-size: 20px;
+    font-weight: 600
+}
+
+.moviesandtvshows-card-description {
+    font-size: 17px
+}
+
+.footer {
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+    padding-bottom: 10px
+}
